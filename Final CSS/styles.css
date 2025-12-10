@@ -1,0 +1,91 @@
+:root {
+            --color-primary: #002B5B;
+            --color-secondary: #00A6ED;
+            --color-light: #F5F5F5;
+            --color-white: #ffffff;
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-white);
+            color: #333;
+        }
+
+        /* Animación del banner principal */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .banner-content {
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Transiciones suaves para botones */
+        .btn-transition {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-transition:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 43, 91, 0.3);
+        }
+
+        /* Menú móvil */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+
+        /* Efecto hover en tarjetas */
+        .event-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 166, 237, 0.2);
+        }
+
+        /* Animación de entrada para tarjetas */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 0.6s ease-out forwards;
+        }
+
+        /* Estilos del header sticky */
+        .header-sticky {
+            transition: all 0.3s ease;
+        }
+
+        .header-sticky.scrolled {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }

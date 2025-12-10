@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Privada del Sur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="header-sticky bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl" style="background-color: var(--color-primary);">
+                        UPS
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold" style="color: var(--color-primary);">Universidad Privada del Sur</h1>
+                        <p class="text-xs" style="color: var(--color-secondary);">Excelencia Académica</p>
+                    </div>
+                </div>
+
+               
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="#inicio" class="btn-transition font-semibold hover:text-blue-600" style="color: var(--color-primary);">Inicio</a></li>
+                    <li><a href="#carreras" class="btn-transition font-semibold hover:text-blue-600" style="color: var(--color-primary);">Carreras</a></li>
+                    <li><a href="#eventos" class="btn-transition font-semibold hover:text-blue-600" style="color: var(--color-primary);">Eventos</a></li>
+                    <li><a href="#admision" class="btn-transition font-semibold hover:text-blue-600" style="color: var(--color-primary);">Admisión</a></li>
+                    <li><a href="#contacto" class="btn-transition font-semibold hover:text-blue-600" style="color: var(--color-primary);">Contacto</a></li>
+                    <li>
+                        <button class="btn-transition px-6 py-2 rounded-full text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Portal Estudiante
+                        </button>
+                    </li>
+                </ul>
+
+              
+                <button id="menuToggle" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div id="mobileMenu" class="mobile-menu md:hidden mt-4" style="background-color: var(--color-light);">
+                <ul class="flex flex-col space-y-3 p-4 rounded-lg">
+                    <li><a href="#inicio" class="block py-2 font-semibold" style="color: var(--color-primary);">Inicio</a></li>
+                    <li><a href="#carreras" class="block py-2 font-semibold" style="color: var(--color-primary);">Carreras</a></li>
+                    <li><a href="#eventos" class="block py-2 font-semibold" style="color: var(--color-primary);">Eventos</a></li>
+                    <li><a href="#admision" class="block py-2 font-semibold" style="color: var(--color-primary);">Admisión</a></li>
+                    <li><a href="#contacto" class="block py-2 font-semibold" style="color: var(--color-primary);">Contacto</a></li>
+                    <li>
+                        <button class="w-full py-2 rounded-full text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Portal Estudiante
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section id="inicio" class="pt-24 min-h-screen flex items-center" style="background: linear-gradient(135deg, #002B5B 0%, #00A6ED 100%);">
+        <div class="container mx-auto px-4">
+            <div class="banner-content text-center text-white">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">Construye tu Futuro con Nosotros</h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">Educación de calidad, innovación y excelencia académica</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-transition px-8 py-4 bg-white rounded-full font-bold text-lg" style="color: var(--color-primary);">
+                        Conoce nuestras carreras
+                    </button>
+                    <button class="btn-transition px-8 py-4 border-2 border-white rounded-full font-bold text-lg text-white hover:bg-white" style="transition: all 0.3s;" onmouseover="this.style.color='#002B5B'" onmouseout="this.style.color='white'">
+                        Proceso de admisión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16" style="background-color: var(--color-light);">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--color-secondary);">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Excelencia Académica</h3>
+                    <p class="text-gray-600">Programas acreditados con docentes altamente calificados</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--color-secondary);">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Empleabilidad</h3>
+                    <p class="text-gray-600">Convenios con empresas líderes del sector</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--color-secondary);">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Proyección Global</h3>
+                    <p class="text-gray-600">Programas de intercambio internacional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--color-primary);">Eventos Académicos</h2>
+                <p class="text-gray-600 text-lg">Participa en nuestras actividades y amplía tus conocimientos</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.1s;">
+                    <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #002B5B 0%, #00A6ED 100%);">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Feria Tecnologica de Ica</h3>
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <svg class="w-5 h-5 mr-2" style="color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="font-semibold">15 de Diciembre, 2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Descubre los proyectos más innovadores desarrollados por nuestros estudiantes</p>
+                        <button class="btn-transition w-full py-3 rounded-lg text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.2s;">
+                    <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #00A6ED 0%, #002B5B 100%);">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Congreso de Liderazgo Empresarial</h3>
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <svg class="w-5 h-5 mr-2" style="color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="font-semibold">22 de Diciembre, 2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Conferencias magistrales con líderes empresariales de alto nivel</p>
+                        <button class="btn-transition w-full py-3 rounded-lg text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.3s;">
+                    <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #002B5B 0%, #00A6ED 100%);">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Feria de Empleabilidad</h3>
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <svg class="w-5 h-5 mr-2" style="color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="font-semibold">5 de Febrero, 2026</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Feria de Empleabilidad con las mejores empresas de Ica</p>
+                        <button class="btn-transition w-full py-3 rounded-lg text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.4s;">
+                    <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #00A6ED 0%, #002B5B 100%);">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">TechSummit</h3>
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <svg class="w-5 h-5 mr-2" style="color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="font-semibold">12 de Febrero, 2026</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">TechSummit, Conferencias sobre las nuevas tecnologias</p>
+                        <button class="btn-transition w-full py-3 rounded-lg text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.5s;">
+                    <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #002B5B 0%, #00A6ED 100%);">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Jornada de Salud Comunitaria</h3>
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <svg class="w-5 h-5 mr-2" style="color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="font-semibold">20 de Febrero, 2026</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Campaña de Salud, nos cuidamos y cuidamos a los demás</p>
+                        <button class="btn-transition w-full py-3 rounded-lg text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="event-card bg-white rounded-xl shadow-lg overflow-hidden animate-slide-in" style="animation-delay: 0.6s;">
+                    <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #00A6ED 0%, #002B5B 100%);">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3" style="color: var(--color-primary);">Gran Feris de Empendimiento Estudiantil</h3>
+                        <div class="flex items-center mb-4 text-gray-600">
+                            <svg class="w-5 h-5 mr-2" style="color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="font-semibold">28 de Febrero, 2026</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Gran feria de emprendimiento, ven a conocer los emprendimientos de nuestros alumnos</p>
+                        <button class="btn-transition w-full py-3 rounded-lg text-white font-semibold" style="background-color: var(--color-secondary);">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <footer class="py-12 text-white" style="background-color: var(--color-primary);">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Universidad Privada del Sur</h3>
+                    <p class="opacity-80">Formando líderes del mañana desde 1995</p>
+                </div>
+                <div
